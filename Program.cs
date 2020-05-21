@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 
 namespace CreditCardValidator
 {
@@ -11,7 +11,6 @@ namespace CreditCardValidator
 
             CreditCardValidator.IsValid(testInputValid);
             CreditCardValidator.IsValid(testInputInvalid);
-            
         }
     }
 
@@ -43,15 +42,15 @@ namespace CreditCardValidator
 
             if ((step2Sum + step3Sum) % 10 == 0)
             {
-                Console.WriteLine($"{CardNumber} is valid");
+                WriteLine($"{CardNumber} is valid");
             }
             else
             {
-                Console.WriteLine($"{CardNumber} is not valid");
+                WriteLine($"{CardNumber} is not valid");
             }
 
-            Console.WriteLine($"CardNumber: {CardNumber}");
-            Console.WriteLine($"tempTestInput : {tempTestInput}");
+            WriteLine($"CardNumber: {CardNumber}");
+            WriteLine($"tempTestInput : {tempTestInput}");
         }
     }
 }
